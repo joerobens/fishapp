@@ -1,0 +1,15 @@
+{
+  "name": "fishapp",
+  "version": "1.0.0",
+  "description": "Fish app with API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Robens",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  }
+}
