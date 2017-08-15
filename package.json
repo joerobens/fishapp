@@ -2,13 +2,26 @@
   "name": "fishapp",
   "version": "1.0.0",
   "description": "Fish app with API",
-  "main": "index.js",
+  "main": "Server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joerobens/fishapp"
+  },
+  "keywords": [
+    "Node.js",
+    "mongoDb"
+  ],
+  "bugs": {
+    "url": "https://github.com/joerobens/fishapp/issues"
   },
   "author": "Joe Robens",
   "license": "ISC",
+  "homepage": "https://github.com/joerobens/fishapp",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "mongoose": "^4.11.7"
   }
