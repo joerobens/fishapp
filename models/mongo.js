@@ -36,12 +36,15 @@ var userTanksSchema = new mongoSchema({
 	"tankVolume": Number,
 	"tankName": String,
 	"tankPicture": String,
+  "tankStartDate": { type : Date, default: Date.now }
 });
 
 var userTankHardwareSchema = new mongoSchema({
 	"UserTankid": mongoSchema.Types.ObjectId,
 	"tankHardwareType": String,
 	"tankHardwareBrand": String,
+  "tankHardwarePicture": String,
+  "tankHardwareStartDate": { type : Date, default: Date.now }
 });
 
 var userTankParametersSchema = new mongoSchema({
@@ -52,7 +55,8 @@ var userTankParametersSchema = new mongoSchema({
   	"parameterMeasureDate": Date,
   	"parameterMeasureType": String,
   	"parameterNotes": String
-  }
+  },
+  "userTankTestDate": { type : Date, default: Date.now }
 });
 
 var userTankLivestockSchema = new mongoSchema({
