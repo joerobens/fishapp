@@ -2,7 +2,6 @@
 var express = require('express');
 var router = express.Router();
 var Users = require("../models/mongo").Users;
-var UserProfiles = require("../models/mongo").UserProfiles;
 
 // GENERAL USER CREATION
 router.route("/").get(function(req, res) {

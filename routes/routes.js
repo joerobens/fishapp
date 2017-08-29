@@ -6,7 +6,6 @@ router.get("/", function(req, res) {
 });
 
 router.use('/users', require('./users'));
-router.use('/userProfiles', require('./userProfiles'));
 router.use('/userTanks', require('./userTanks'));
 
 module.exports = router;
